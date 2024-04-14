@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Minimalist Blog Card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap')
+  </style>
+</head>
+<body>
+  <div class="top-container">
+    <div class="img-container">
+      <img src="cactus_img.jpg" alt="An image of a potted cactus">
+    </div>
+    <div class="button">
+      <p>Design</p>
+    </div>
+    <div class="text-container">
+        <h4>Embracing Minimalism</h4>
+        <p>
+          From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in
+          simplicity.
+        </p>
+    </div>
+    <hr />
+    <div class="author-container">
+      <p id="author">
+        Annie Sprat
+      </p>
+    </div>
+  </div>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBDsN6aaQ3WnCtnG-9qqajuTtn9kFUQMf0",
+      authDomain: "minimalist-blog-card.firebaseapp.com",
+      projectId: "minimalist-blog-card",
+      storageBucket: "minimalist-blog-card.appspot.com",
+      messagingSenderId: "647462445984",
+      appId: "1:647462445984:web:208768a9642521a9e4bac5"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
