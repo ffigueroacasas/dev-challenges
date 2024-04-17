@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/0bd2bf2294.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC52RJ0sK0kbPjIoFLNP5yE4-1rCQykYms",
+      authDomain: "testimonial-page-b402c.firebaseapp.com",
+      projectId: "testimonial-page-b402c",
+      storageBucket: "testimonial-page-b402c.appspot.com",
+      messagingSenderId: "509192770323",
+      appId: "1:509192770323:web:a06194e97f37e862c5c0e6"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="text-container">
+      <div id="star-circle">
+        <i class="fa-star fa-solid" id="star-icon"></i>
+      </div>
+      <div class="text-section">
+        <h1>Reviewers</h1>
+        <p>Reviewers is where people can access guidelines, checklists, and other tools to assist them in reviewing papers or
+        manuscripts. It provides a structured approach to ensure that the review process is thorough, efficient, and consistent.</p>
+        <div class="list-section">
+          <ul>
+            <li>
+              <img src="src/Done_ring_round_fill.svg" alt="green check" class="green-check">
+              <p>Checklist to Review an Academic Paper</p>
+            </li>
+            <li>
+              <img src="src/Done_ring_round_fill.svg" alt="green check" class="green-check">
+              <p>Peer Review Checklist</p>
+            </li>
+            <li>
+              <img src="src/Done_ring_round_fill.svg" alt="green check" class="green-check">
+              <p>Checklist for Editors, Reviewers, and Authors of SPIE Journals</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-container">
+      <div class="review" id="google-review">
+        <div class="review-header">
+          <img src="src/google-testimonial.png" alt="google testimonial" class="testimonial">
+          <div class="stars-container">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill_gray.svg" alt="a grey empty star" class="star">
+          </div>
+        </div>
+        <p class="name review-text">Samantha Lee</p>
+        <p class="review-text">The checklist ensures that the review process is thorough</p>
+      </div>
+      <div class="review" id="meta-review">
+        <div class="review-header">
+          <img src="src/meta-testimonial.png" alt="meta testimonial" class="testimonial">
+          <div class="stars-container">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+            <img src="src/Star_fill.svg" alt="a full yellow star" class="star">
+          </div>
+        </div>
+        <p class="name review-text">Rachel Patel</p>
+        <p class="review-text">I highly recommend the Writecream Business Description</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
