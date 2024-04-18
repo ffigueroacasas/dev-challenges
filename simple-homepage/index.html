@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="./script.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAzf6YcMu4bmYDw71RJzzlvFfExLNoXASI",
+      authDomain: "simple-homepage-59883.firebaseapp.com",
+      projectId: "simple-homepage-59883",
+      storageBucket: "simple-homepage-59883.appspot.com",
+      messagingSenderId: "308482340322",
+      appId: "1:308482340322:web:0e148b547b784c8f39b5bb"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</head>
+<body class="light-theme">
+  <div id="top-container">
+    <div id="image-container">
+      <img src="./src/alarado-icon-homepage.svg" alt="">
+    </div>
+    <nav>
+      <div id="link-container">
+        <a id="about-link" class="light-theme">About us</a>
+        <a>Product</a>
+        <a>Resource</a>
+        <a>Contact</a>
+      </div>
+      <div id="toggle-container" onclick="handleToggleBtn()" class="dark-button">
+        <img src="./src/Moon_fill.svg">
+        <img src="./src/Sun_fill.svg">
+      </div>
+    </nav>
+  </div>
+  <div id="main-container">
+    <div id="left-container">
+      <div id="text-container">
+        <p id="slogan" class="light-theme">😎 SIMPLE WAY TO COMMUNICATE</p>
+        <h1 class="light-theme">Actions for Accesibility in Design</h1>
+        <p>The fastest way to build and deploy websites with reusable components.</p>
+      </div>
+      <div id="actions-container">
+        <button>GET STARTED</button>
+        <a href="#">Get live demo</a>
+      </div>
+      <div id="ticks-container">
+        <ul>
+          <li>
+            <img src="./src/Done_ring_round_fill.svg" alt="checkmark">
+            <p>No credit card required</p>
+          </li>
+          <li>
+            <img src="./src/Done_ring_round_fill.svg" alt="checkmark">
+            <p>No software to install</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="right-container">
+      <img src="./src/hero-image-simple-homepage.png" alt="image of a cartoon man using his laptop" id="hero-image">
+    </div>
+  </div>
+</body>
+</html>
