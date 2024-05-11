@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Register Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCZl7H6Olk89hT4r1Mogbrqstns-gtB30g",
+      authDomain: "multi-step-form-377d6.firebaseapp.com",
+      projectId: "multi-step-form-377d6",
+      storageBucket: "multi-step-form-377d6.appspot.com",
+      messagingSenderId: "202590038930",
+      appId: "1:202590038930:web:764180781168bf5353af4b"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <form>
+    <fieldset id="first-container" class="form-container">
+      <h3>Register</h3>
+      <div class="field-container">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="enter your name" required>
+      </div>  
+      <div class="field-container">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="example@gmail.com" required>
+      </div>
+      <button id="submit-one">Continue</button>
+    </fieldset>
+    <fieldset id="second-container" class="invisible form-container">
+      <h3>Which topics are you interested in?</h3>
+      <div class="check-option deselected" id="software-label">
+        <input type="checkbox" id="software-development" name="interest" value="software">
+        <p>Software Development</p>
+      </div>
+      <div class="check-option deselected" id="ux-label">
+        <input type="checkbox" id="user-experience" name="interest" value="ux" checked>
+        <p>User Experience</p>
+      </div>
+      <div class="check-option deselected" id="design-label">
+        <input type="checkbox" id="graphic-design" name="interest" value="design">
+        <p>Graphic Design</p>
+      </div>
+      <button id="submit-two">Continue</button>
+    </fieldset>
+    <fieldset id="third-container" class="invisible form-container">
+      <h3>Summary</h3>
+      <div id="name-container" class="data-container">
+        <p>Name:</p>
+        <p id="name-box"></p>
+      </div>
+      <div id="email-container" class="data-container">
+        <p>Email:</p>
+        <p id="email-box"></p>
+      </div>
+      <div id="topics-container" class="data-container">
+        <p>Topics:</p>
+        <ul id="topics-list">
+
+        </ul>
+      </div>
+      <button type="submit" id="submit-final">Confirm</button>
+    </fieldset>
+    <div id="steps-container">
+      <p>Step 1 of 3</p>
+      <div id="balls-container">
+        <div class="ring activated" id="ring-one">
+          <div class="ball activated" id="ball-one"> </div>
+        </div>
+        <div class="ring deactivated" id="ring-two">
+          <div class="ball deactivated" id="ball-two"> </div>
+        </div>
+        <div class="ring deactivated" id="ring-three">
+          <div class="ball deactivated" id="ball-three"> </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div id="confirm-message" class="invisible">
+    <h2>
+      ✅Confirmed!
+    </h2>
+  </div>
+</body>
+</html>
+
