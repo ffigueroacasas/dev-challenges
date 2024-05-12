@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCMfvxAPPyUXjj8Ci0RgjX2eQ6kT2RiMEc",
+      authDomain: "music-player-fd543.firebaseapp.com",
+      projectId: "music-player-fd543",
+      storageBucket: "music-player-fd543.appspot.com",
+      messagingSenderId: "353718200928",
+      appId: "1:353718200928:web:a21d3a2fbdfb4980383105"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <div id="top-container">
+    <div id="img-container">
+      <img id="img" src="./src/cover-1.png" alt="cover 1">
+    </div>
+    <div id="info-container">
+      <h4>Lost in the City Lights</h4>
+      <p>Cosmo Sheldrake</p>
+    </div>
+    <div id="progressbar-container">
+      <div id="timestamps">
+        <div class="timestamp" id="left-ts">
+          00:00
+        </div>
+        <div class="timestamp" id="right-ts">
+          01:12
+        </div>
+      </div>
+      <div id="bar">
+        <div id="progress">
+        </div>
+      </div>
+    </div>
+    <div id="buttons-container">
+      <button id="previous">
+        <img src="./src/Stop_and_play_fill-1.svg">
+      </button>
+      <button id="play-pause">
+        <img src="./src/Play_fill.svg">
+      </button>
+      <button id="next">
+        <img src="./src/Stop_and_play_fill.svg" alt="">
+      </button>
+    </div>
+  </div>
+</body>
+</html>
