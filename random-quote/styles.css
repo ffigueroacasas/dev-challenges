@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit';
+}
+
+body {
+  background-color: #111729;
+  height: 100vh;
+  display: flex;
+}
+
+#top-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quote-container {
+  background-color: #20293A;
+  width: 500px;
+  height: min-content;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 40px;
+  width: 500px;
+  height: min-content;
+  text-align: center;
+}
+
+#quote-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#author-container {
+  text-align: center;
+  font-size: 1rem;
+  color: #EEE;
+  font-weight: 600;
+}
+
+#text-container {
+  color: #97A3B6;
+  font-size: 1.5rem;
+}
+
+#tags-container {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: #6466E9;
+  font-size: 0.625rem;
+  margin: 6px 0 8px 0;
+}
+
+#tags-container > p {
+  border: 0.5px solid #6466E9;
+  margin: 5px 2px;
+  border-radius: 25px;
+  padding: 1px 8px;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: center;
+  font-size: 0.625rem;
+  border: 2px solid #20293A;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+#buttons-container > button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  z-index: 10;
+}
+
+#buttons-container > button:first-child {
+  border-right: solid 2px #20293A;
+}
+
+@media screen and (max-width: 640px) {
+  #quote-container, #overlay {
+    width: 80%;
+  }
+}

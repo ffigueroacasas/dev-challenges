@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quotes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyD22MjmfEXINiP_4LbeCH7HR7dCYANVARM",
+      authDomain: "random-quotes-633ae.firebaseapp.com",
+      projectId: "random-quotes-633ae",
+      storageBucket: "random-quotes-633ae.appspot.com",
+      messagingSenderId: "967883670051",
+      appId: "1:967883670051:web:505a87513d45151ea4a796"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <div id="top-container">
+    <div id="quote-container">
+      <div id="overlay">
+        <div id="author-container">
+        </div>
+        <div id="tags-container">
+        </div>
+        <div id="text-container">
+        </div>
+      </div>
+      <img src="./images/bg-image-random-quote.svg">
+    </div>
+    <div id="buttons-container">
+        <button id="random-btn">
+          <img src="./images/Regroup.svg">
+        </button>
+        <button id="copy-btn">
+          <img src="./images/link.svg">
+        </button>
+    </div>
+  </div>
+</body>
+</html>
