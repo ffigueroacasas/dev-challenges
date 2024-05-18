@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDh4YoWgshGVzWvO9AKzFBGY9QynvKfOYM",
+      authDomain: "qr-code-generator-cc28d.firebaseapp.com",
+      projectId: "qr-code-generator-cc28d",
+      storageBucket: "qr-code-generator-cc28d.appspot.com",
+      messagingSenderId: "715365265281",
+      appId: "1:715365265281:web:1b9b9410d9338de6fc0280"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <div class="top-container " id="form-div">
+    <div id="logo-container">
+      <img src="./images/logo-qr-generator.svg">
+    </div>  
+    <div id="form-container">
+      <form>
+        <input type="text" placeholder="Enter an url" id="url-input">
+        <button type="submit" id="qr-btn">QR code</button>
+      </form>
+    </div>
+  </div>
+  <div class="top-container invisible" id="display-div">
+    <img src="./images/logo-qr-generator.svg" id="final-logo">
+    <div id="center-feature">
+      <div id="qr-container">
+      </div>
+      <div id="background-circle">
+      </div>
+    </div>
+    <div id="buttons-container">
+      <button id="download-btn" class="final-buttons">
+        Download <img src="./images/download-svgrepo-com.svg" class="svg">
+      </button>
+      <button id="share-btn" class="final-buttons">
+        Share <img src="./images//paperclip-svgrepo-com.svg" class="svg">
+      </button>
+    </div>
+  </div>
+</body>
+</html>
