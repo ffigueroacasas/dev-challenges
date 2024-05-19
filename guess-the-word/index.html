@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Word!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAzDlnPHz2JJio6B0eGZjs1RCZ1G0POZcQ",
+      authDomain: "guess-the-word-fd2f6.firebaseapp.com",
+      projectId: "guess-the-word-fd2f6",
+      storageBucket: "guess-the-word-fd2f6.appspot.com",
+      messagingSenderId: "504368498534",
+      appId: "1:504368498534:web:fcad5b5fd0b4460b292aa7"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <div id="top-container">
+    <img src="./images/Word Scramblle.svg" id="logo">
+    <div id="scrambled-display">
+      <p id="scrambled-text"></p>
+    </div>
+    <div id="metrics-container">
+      <div id="tries-container">
+        <p id="tries">Tries (0/5):</p>
+        <div id="bubbles-container">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+        </div>
+      </div>
+      <div id="mistakes-container">
+        <p id="mistakes">Mistakes:</p>
+      </div>
+    </div>
+    <div id="inputs-container">
+      <input type="text" maxlength="1" class="letter-input">
+      <input type="text" maxlength="1" class="letter-input">
+      <input type="text" maxlength="1" class="letter-input">
+      <input type="text" maxlength="1" class="letter-input">
+      <input type="text" maxlength="1" class="letter-input">
+      <input type="text" maxlength="1" class="letter-input">
+    </div>
+    <div id="buttons-container">
+      <button id="random-btn" class="btn">Random</button>
+      <button id="reset-btn" class="btn">Reset</button>
+    </div>
+  </div>
+</body>
+</html>

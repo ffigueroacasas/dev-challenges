@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-image: url('./images/bg-guess-the-word.png');
+  height: 100vh;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#top-container {
+  width: 30%;
+  height: 70%;
+  margin: auto;
+  background-color: #0b1121;
+  padding: 30px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo{
+  margin-bottom: 20px
+}
+
+#scrambled-display {
+  height: 20%;
+  width: 100%;
+  background-color: #4A5567;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0 4px #030616;
+  font-size: 2rem;
+  text-align: center;
+  color: #97A3B6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#scrambled-text {
+  color: inherit;
+}
+
+#metrics-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 0.75rem;
+  margin: 20px 0;
+}
+
+#tries-container {
+  display: flex;
+}
+
+#tries{
+  color: #4A5567;
+  font-weight: 500;
+}
+
+#bubbles-container {
+  display: flex;
+  vertical-align:middle;
+  margin-left: 6px;
+}
+
+.bubble {
+  height: 5px;
+  width: 5px;
+  background-color: #4A5567;
+  margin: 3px;
+  border-radius: 50%;
+}
+
+#mistakes {
+  color: #4A5567;
+  font-weight: 500;
+}
+
+#inputs-container {
+  margin: 30px 0;
+}
+
+.letter-input {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4A5567;
+  background-color: #0b1121;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 3px;
+  color: #4A5567;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 400;
+  color: #F2F5F9;
+  outline: none;
+}
+
+.letter-input:focus {
+  border: 2px solid #7429C6;
+}
+
+.letter-input:disabled {
+  border: 2px solid greenyellow
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #C951E7;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px #672171;
+  color: #F2F5F9;
+}
+
+.active {
+  background-color: #7429C6;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 20px left 40%;
+  }
+
+  #top-container {
+    width: 80%;
+  }
+
+  .letter-input {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 0.75rem;
+  }
+}
