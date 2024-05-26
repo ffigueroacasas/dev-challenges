@@ -1,0 +1,13 @@
+.toggle-btn {
+  padding: 8px;
+  background-color: inherit;
+  border: none;
+  border-radius: 7px;
+  color: #FEF7EE;
+  font-weight: 700;
+  margin: 0 10px
+}
+
+.active {
+  background-color: #6F757C;
+}

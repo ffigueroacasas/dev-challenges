@@ -1,0 +1,77 @@
+.menu-item {
+  color: #FEF7EE;
+  width: max-content;
+  margin: 30px 15px ;
+  padding: 5px 5px 20px 5px;
+  border-radius: 15px;
+  transition: all 0.1s linear;
+}
+
+.menu-item:hover {
+  background-color: #FEF7EE;
+  color: #111315;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container > img {
+  border-radius: 15px;
+}
+
+.popular {
+  position: absolute;
+  background-color: #F6C768;
+  top: 8px;
+  left: 8px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.625rem;
+  color: #111315;
+  font-weight: 800;
+}
+
+.middle-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.name {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.price {
+  background-color: #BEE3CC;
+  color: #111315;
+  padding: 4px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.bottom-container {
+  text-align: start;
+  position: relative;
+}
+
+.bottom-container > img {
+  vertical-align: bottom;
+}
+
+.bottom-container > p {
+  display: inline;
+  vertical-align: middle;
+}
+
+.gray {
+  color: #6F757C;
+}
+
+.sold-out {
+  color: #ED735D;
+  position: absolute;
+  right: 0;
+}

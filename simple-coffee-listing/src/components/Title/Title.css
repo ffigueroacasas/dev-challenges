@@ -1,0 +1,38 @@
+#title {
+  width: 40%;
+  margin: 10px 0;
+  position: relative;
+  padding-top: 50px;
+  overflow: visible;
+}
+
+#title > h3 {
+  color: #FEF7EE;
+  font-weight: 600;
+  font-size: 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+#title > p {
+  position: relative;
+  color: #6F757C;
+  font-weight: 400;
+  font-size: 1rem;
+  z-index: 2;
+  margin: 10px 0;
+}
+
+#title > img {
+  width: 250px;
+  position:absolute;
+  top: -5px;
+  right: -10px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  #title {
+    width: 75%;
+  }
+}
